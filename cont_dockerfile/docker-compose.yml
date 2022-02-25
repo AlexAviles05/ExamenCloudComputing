@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  servidorweb3:
+    image: webdevops/php-apache
+    build: .  
+    container_name: servidorweb3
+    volumes:
+      - ./app:/app/
+    ports:
+      - 83:80
+  
